@@ -1,6 +1,6 @@
 $(function(){
     //this code runs after page is fully loaded
-    $("#nameform").submit(function(event) {
+    $("#nameform").on("submit", function(event) {
         event.preventDefault();
         let fname = $("#fname").val();
         let lname = $("#lname").val();
